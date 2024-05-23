@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #491579;
+}
+
+main {
+    width: 30vw;
+    text-align: center;
+    background-color: whitesmoke;
+    border: solid;
+   border-width: 4px;
+    
+    border-radius: 1rem;
+    color: #1f2933;
+
+}
+
+.image{
+    width: 90%;
+    height: auto;
+    max-height: 220px;
+    margin: 10px 0 40px 0;
+}
+h2{
+    font-size: 22px;
+    margin: 20px;
+}
+h3{
+    font-size: 30px;
+}
+p{
+    font-size: 18px;
+}
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+   
+}
+button{
+    min-width: 280px;
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+    border-radius: 8px;
+    border-style: none;
+   text-align: center;
+    cursor: pointer;
+    padding: 5px 6px;
+   color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-shadow: rgba(0,0,0,0.25) 0 3px 8px;
+    text-transform: capitalize;
+
+}
+button:hover{
+    box-shadow: rgba(80,63,205,0.2) 0 1px 30px;
+    transition-duration: 0.1s
+   
+}
+
+#gameArea{
+   
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#newGameButton button{
+   margin: 20px 0;
+   margin-top: 10px;
+}
+
+input{
+    border: 1px solid lightgray;
+    background: transparent;
+    margin: 40px 0;
+    padding: 20px 0;
+    width: 250px;
+    text-align: center;
+}
+
+.stats{
+    text-align: left;
+    margin-bottom: 40px;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+   
+}
+
+.info span{
+    font-size: 20px;
+    color: #ff0511;
+}
+/* Updated CSS file */
+/* Updated CSS file */
+/* Updated CSS file */
+@media screen and (max-width: 1024px) {
+    main {
+        width: 80vw; /* Adjusted width for larger tablets */
+    }
+    .image {
+        width: 70%; /* Adjusted width for larger tablets */
+        margin: 10px 0 20px 0;
+    }
+    h2 {
+        font-size: 20px; /* Adjusted font size */
+        margin: 10px;
+    }
+    h3 {
+        font-size: 26px; /* Adjusted font size */
+    }
+    p {
+        font-size: 18px; /* Adjusted font size */
+    }
+    .button-wrapper {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    button {
+        min-width: 220px; /* Adjusted min-width for larger tablets */
+        font-size: 18px; /* Adjusted font size */
+        margin-bottom: 10px;
+    }
+    input {
+        margin: 20px 0;
+        padding: 12px 0; /* Adjusted padding */
+        width: 300px; /* Adjusted width for larger tablets */
+    }
+    .stats {
+        margin-bottom: 20px;
+    }
+    .info span {
+        font-size: 18px; /* Adjusted font size */
+    }
+}

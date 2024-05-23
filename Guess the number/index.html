@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="init()">
+    <main>
+        <div id="WelcomeScreen">
+            <h2>Guess the number between 1 - 100</h2>
+            <img class = "image"src="./images/5193225.jpg" alt="logo">
+
+            <section class="eventSection">
+                <p>select The Difficulty</p>
+                <div class="button-wrapper">
+                    <button onclick="easymode()">Easy: 10 attempts</button>
+                    <button onclick="hardmode()">Hard: 5 attempts</button>
+
+                </div>
+              </section>
+        </div>
+
+        <div id="gameArea">
+            <div id="newGameButton">
+                 <button>Your Guess</button>
+            </div>
+                
+            <section>
+                <h3 id="textoutput">Your Guess</h3>
+               <input type="number"
+               id="inputBox"
+               min = "1"
+               max = "100"
+               placeholder="Enter your Number" 
+               onchange="compareGuess"
+               />
+            </section>
+
+            <section class="stats">
+                <div class="info">
+                 <p>Number of previous attempts</p>
+                 <span id="attempts">0</span>
+                </div>
+
+                <div class="info">
+                 <p>Number of previous guesses</p>
+                 <span id="guesses">0</span>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
